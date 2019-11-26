@@ -5,6 +5,6 @@ class CustomersController < ApplicationController
   end
 
   def upload
-    CSV.foreach(params)
+    CSV.foreach(params[:leads])
   end
 end
